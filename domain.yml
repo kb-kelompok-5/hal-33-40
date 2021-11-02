@@ -290,6 +290,9 @@ actions:
 - action_toefldoktor500
 - action_toefldoktor475
 
+  utter_tanya/tanya_lagi:
+  - text: "Ada lagi yang ingin ditanyakan?"
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
