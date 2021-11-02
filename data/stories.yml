@@ -1,247 +1,395 @@
 version: "2.0"
 
 stories:
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
+      
+  - story: sad path 1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
 
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - story: sad path 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_goodbye
+      
+  - story: putus studi diploma path
+    steps:
+      - intent: hello
+      - action: utter_hello
+      - intent: tanya/tanya_kriteria_putus_studi_program_diploma
+      - action: utter_tanya/tanya_kriteria_putus_studi_program_diploma
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - story: putus studi sarjana path
+    steps:
+      - intent: hello
+      - action: utter_hello
+      - intent: tanya/tanya_kriteria_putus_studi_program_sarjana
+      - action: utter_tanya/tanya_kriteria_putus_studi_program_sarjana
 
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
-  
-- story: putus studi diploma path
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_kriteria_putus_studi_program_diploma
-  - action: utter_tanya/tanya_kriteria_putus_studi_program_diploma
-  
-- story: putus studi sarjana path
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_kriteria_putus_studi_program_sarjana
-  - action: utter_tanya/tanya_kriteria_putus_studi_program_sarjana
-  
-- story: putus studi magister path
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_kriteria_putus_studi_program_magister
-  - action: utter_tanya/tanya_kriteria_putus_studi_program_magister
-  
-- story: putus studi doktor path
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_kriteria_putus_studi_program_doktor
-  - action: utter_tanya/tanya_kriteria_putus_studi_program_doktor
-  
-- story: penilaian pembelajaran
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_penilaian_pembelajaran
-  - action: utter_tanya/tanya_penilaian_pembelajaran
+  - story: putus studi magister path
+    steps:
+      - intent: hello
+      - action: utter_hello
+      - intent: tanya/tanya_kriteria_putus_studi_program_magister
+      - action: utter_tanya/tanya_kriteria_putus_studi_program_magister
 
-- story: cakupan penilaian pembelajaran
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_cakupan_penilaian_pembelajaran
-  - action: utter_tanya/tanya_cakupan_penilaian_pembelajaran
-  
-- story: prinsip penilaian
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_prinsip_penilaian
-  - action: utter_tanya/tanya_prinsip_penilaian
-  
-- story: pemberian umpan balik
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_pemberian_umpan_balik
-  - action: utter_tanya/tanya_pemberian_umpan_balik
-  
-- story: instrumen penilaian
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_instrumen_penilaian
-  - action: utter_tanya/tanya_instrumen_penilaian
-  
-- story: isi dari instrumen penilaian
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_apa_saja_instrumen_penilaian
-  - action: utter_tanya/tanya_apa_saja_instrumen_penilaian
-  
-- story: teknik penilaian
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_teknik_penilaian
-  - action: tter_tanya/tanya_teknik_penilaian
+  - story: putus studi doktor path
+    steps:
+      - intent: hello
+      - action: utter_hello
+      - intent: tanya/tanya_kriteria_putus_studi_program_doktor
+      - action: utter_tanya/tanya_kriteria_putus_studi_program_doktor
+      
+  - story: sad path 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_goodbye
 
-- story: mekanisme penilaian
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_mekanisme_penilaian
-  - action: utter_tanya/tanya_mekanisme_penilaian
-  
-- story: sistem penilaian
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_sistem_penilian
-  - action: utter_tanya/tanya_sistem_penilian
-  
-- story: pengulangan mata kuliah
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_pengulangan_mata_kuliah
-  - action: utter_tanya/tanya_pengulangan_mata_kuliah
-  
-- story: perbaikan nilai
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_perbaikan_nilai
-  - action: utter_tanya/tanya_perbaikan_nilai
-  
-- story: transfer nilai dan pengakuan kredit pindahan
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_transfer_nilai_dan_pengakuan_kredit_pindahan
-  - action: utter_tanya/tanya_transfer_nilai_dan_pengakuan_kredit_pindahan
-  
-- story: transfer nilai dan pengakuan kredit unsri
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_transfer_nilai_dan_pengakuan_kredit_unsri
-  - action: utter_tanya/tanya_transfer_nilai_dan_pengakuan_kredit_unsri
-  
-- story: ips dan ipk
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_ips_dan_ipk
-  - action: utter_tanya/tanya_ips_dan_ipk
-  
-- story: evaluasi akademik
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_evaluasi_akademik
-  - action: utter_tanya/tanya_evaluasi_akademik
-  
-- story: ketentuan nilai bahasa inggris
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_ketentuan_nilai_bahasa_inggris
-  - action: utter_tanya/tanya_ketentuan_nilai_bahasa_inggris
-  
-- story: suliet fakultas ekonomi
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_suliet_fakultas_ekonomi
-  - action: utter_tanya/tanya_suliet_fakultas_ekonomi
-  
-- story: suliet fakultas hukum
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_suliet_fakultas_hukum
-  - action: utter_tanya/tanya_suliet_fakultas_hukum
-  
-- story: suliet fakultas teknik
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_suliet_fakultas_teknik
-  - action: utter_tanya/tanya_suliet_fakultas_teknik
-  
-- story: suliet fakultas kedokteran
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_suliet_fakultas_kedokteran
-  - action: utter_tanya/tanya_suliet_fakultas_kedokteran
-  
-- story: suliet fakultas pertanian
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_suliet_fakultas_pertanian
-  - action: utter_tanya/tanya_suliet_fakultas_pertanian
-  
-- story: suliet fkip
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_standar_nilai_bahasa_inggris_fkip
-  - action: utter_tanya/tanya_suliet_fkip
-  
-- story: suliet fisip
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_standar_nilai_bahasa_inggris_fisip
-  - action: utter_tanya/tanya_suliet_fisip
-  
-- story: suliet fakultas mipa
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_standar_nilai_bahasa_inggris_mipa
-  - action: utter_tanya/tanya_suliet_fakultas_mipa
+  - story: putus studi diploma path
+    steps:
+      - intent: hello
+      - action: utter_hello
+      - intent: tanya/tanya_kriteria_putus_studi_program_diploma
+      - action: utter_tanya/tanya_kriteria_putus_studi_program_diploma
 
-- story: suliet fasilkom
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_standar_nilai_bahasa_inggris_fasilkom
-  - action: utter_tanya/tanya_suliet_fasilkom
+  - story: putus studi sarjana path
+    steps:
+      - intent: hello
+      - action: utter_hello
+      - intent: tanya/tanya_kriteria_putus_studi_program_sarjana
+      - action: utter_tanya/tanya_kriteria_putus_studi_program_sarjana
 
-- story: suliet fakultas kesehatan masyarakat
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_standar_nilai_bahasa_inggris_fkm
-  - action: utter_tanya/tanya_suliet_fkm
-  
-- story: suliet program pasca sarjana
-  steps:
-  - intent: hello
-  - action: utter_hello
-  - intent: tanya/tanya_standar_nilai_bahasa_inggris_pps
-  - action: utter_tanya/tanya_suliet_pps
+  - story: putus studi magister path
+    steps:
+      - intent: hello
+      - action: utter_hello
+      - intent: tanya/tanya_kriteria_putus_studi_program_magister
+      - action: utter_tanya/tanya_kriteria_putus_studi_program_magister
+
+  - story: putus studi doktor path
+    steps:
+      - intent: hello
+      - action: utter_hello
+      - intent: tanya/tanya_kriteria_putus_studi_program_doktor
+      - action: utter_tanya/tanya_kriteria_putus_studi_program_doktor
+
+  - story: tanya toefl500 path
+    steps:
+      - intent: toefl500
+      - action: action_toefl500
+
+  - story: tanya toefl400 path
+    steps:
+      - intent: toefl400
+      - action: action_toefl400
+
+  - story: tanya toefl425 path
+    steps:
+      - intent: toefl425
+      - action: action_toefl425
+
+  - story: tanya toefl450 path
+    steps:
+      - intent: toefl450
+      - action: action_toefl450
+
+  - story: tanya toefldiploma path
+    steps:
+      - intent: toefldiploma
+      - action: action_toefldiploma
+
+  - story: tanya toeflmagister450 path
+    steps:
+      - intent: toeflmagister450
+      - action: action_toeflmagister450
+
+  - story: tanya toeflmagister500 path
+    steps:
+      - intent: toeflmagister500
+      - action: action_toeflmagister500
+
+  - story: tanya toeflmagister525 path
+    steps:
+      - intent: toeflmagister525
+      - action: action_toeflmagister525
+
+  - story: tanya toefldoktor450 path
+    steps:
+      - intent: toefldoktor450
+      - action: action_toefldoktor450
+
+  - story: tanya toefldoktor500 path
+    steps:
+      - intent: toefldoktor500
+      - action: action_toefldoktor500
+
+  - story: tanya toefldoktor475 path
+    steps:
+      - intent: toefldoktor475
+      - action: action_toefldoktor475
+
+  - story: happy path
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+
+  - story: sad path 1
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_unhappy
+    - action: utter_cheer_up
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+  - story: sad path 2
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_unhappy
+    - action: utter_cheer_up
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_goodbye
+
+  - story: putus studi diploma path
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_kriteria_putus_studi_program_diploma
+    - action: utter_tanya/tanya_kriteria_putus_studi_program_diploma
+
+  - story: putus studi sarjana path
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_kriteria_putus_studi_program_sarjana
+    - action: utter_tanya/tanya_kriteria_putus_studi_program_sarjana
+
+  - story: putus studi magister path
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_kriteria_putus_studi_program_magister
+    - action: utter_tanya/tanya_kriteria_putus_studi_program_magister
+
+  - story: putus studi doktor path
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_kriteria_putus_studi_program_doktor
+    - action: utter_tanya/tanya_kriteria_putus_studi_program_doktor
+
+  - story: penilaian pembelajaran
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_penilaian_pembelajaran
+    - action: utter_tanya/tanya_penilaian_pembelajaran
+
+  - story: cakupan penilaian pembelajaran
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_cakupan_penilaian_pembelajaran
+    - action: utter_tanya/tanya_cakupan_penilaian_pembelajaran
+
+  - story: prinsip penilaian
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_prinsip_penilaian
+    - action: utter_tanya/tanya_prinsip_penilaian
+
+  - story: pemberian umpan balik
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_pemberian_umpan_balik
+    - action: utter_tanya/tanya_pemberian_umpan_balik
+
+  - story: instrumen penilaian
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_instrumen_penilaian
+    - action: utter_tanya/tanya_instrumen_penilaian
+
+  - story: isi dari instrumen penilaian
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_apa_saja_instrumen_penilaian
+    - action: utter_tanya/tanya_apa_saja_instrumen_penilaian
+
+  - story: teknik penilaian
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_teknik_penilaian
+    - action: tter_tanya/tanya_teknik_penilaian
+
+  - story: mekanisme penilaian
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_mekanisme_penilaian
+    - action: utter_tanya/tanya_mekanisme_penilaian
+
+  - story: sistem penilaian
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_sistem_penilian
+    - action: utter_tanya/tanya_sistem_penilian
+
+  - story: pengulangan mata kuliah
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_pengulangan_mata_kuliah
+    - action: utter_tanya/tanya_pengulangan_mata_kuliah
+
+  - story: perbaikan nilai
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_perbaikan_nilai
+    - action: utter_tanya/tanya_perbaikan_nilai
+
+  - story: transfer nilai dan pengakuan kredit pindahan
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_transfer_nilai_dan_pengakuan_kredit_pindahan
+    - action: utter_tanya/tanya_transfer_nilai_dan_pengakuan_kredit_pindahan
+
+  - story: transfer nilai dan pengakuan kredit unsri
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_transfer_nilai_dan_pengakuan_kredit_unsri
+    - action: utter_tanya/tanya_transfer_nilai_dan_pengakuan_kredit_unsri
+
+  - story: ips dan ipk
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_ips_dan_ipk
+    - action: utter_tanya/tanya_ips_dan_ipk
+
+  - story: evaluasi akademik
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_evaluasi_akademik
+    - action: utter_tanya/tanya_evaluasi_akademik
+
+  - story: ketentuan nilai bahasa inggris
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_ketentuan_nilai_bahasa_inggris
+    - action: utter_tanya/tanya_ketentuan_nilai_bahasa_inggris
+
+  - story: suliet fakultas ekonomi
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_suliet_fakultas_ekonomi
+    - action: utter_tanya/tanya_suliet_fakultas_ekonomi
+
+  - story: suliet fakultas hukum
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_suliet_fakultas_hukum
+    - action: utter_tanya/tanya_suliet_fakultas_hukum
+
+  - story: suliet fakultas teknik
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_suliet_fakultas_teknik
+    - action: utter_tanya/tanya_suliet_fakultas_teknik
+
+  - story: suliet fakultas kedokteran
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_suliet_fakultas_kedokteran
+    - action: utter_tanya/tanya_suliet_fakultas_kedokteran
+
+  - story: suliet fakultas pertanian
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_suliet_fakultas_pertanian
+    - action: utter_tanya/tanya_suliet_fakultas_pertanian
+
+  - story: suliet fkip
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_standar_nilai_bahasa_inggris_fkip
+    - action: utter_tanya/tanya_suliet_fkip
+
+  - story: suliet fisip
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_standar_nilai_bahasa_inggris_fisip
+    - action: utter_tanya/tanya_suliet_fisip
+
+  - story: suliet fakultas mipa
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_standar_nilai_bahasa_inggris_mipa
+    - action: utter_tanya/tanya_suliet_fakultas_mipa
+
+  - story: suliet fasilkom
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_standar_nilai_bahasa_inggris_fasilkom
+    - action: utter_tanya/tanya_suliet_fasilkom
+
+  - story: suliet fakultas kesehatan masyarakat
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_standar_nilai_bahasa_inggris_fkm
+    - action: utter_tanya/tanya_suliet_fkm
+
+  - story: suliet program pasca sarjana
+    steps:
+    - intent: hello
+    - action: utter_hello
+    - intent: tanya/tanya_standar_nilai_bahasa_inggris_pps
+    - action: utter_tanya/tanya_suliet_pps
+
