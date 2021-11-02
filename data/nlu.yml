@@ -795,30 +795,410 @@ nlu:
       - berapa nilai minimal test kemampuan bahasa inggris unsri jurusan Ilmu Tanaman
       - berapa nilai minimal TOEFL jurusan Ilmu Tanaman
       - berapa nilai minimal IELTS jurusan Ilmu Tanaman
+ 
+  - intent: toefl500
+  examples: |
+    - Berapa skor [TOEFL]{"entity":"test"} jurusan [teknik informatika]{"entity":"prodi"}
+    - Berapa skor [IELTS]{"entity":"test"} jurusan [teknik informatika]{"entity":"prodi"}
+    - Berapa skor [TOEFL]{"entity":"test"} prodi [ti]{"entity":"prodi"}
+    - Berapa skor [Test Unsri]{"entity":"test"} prodi [ti]{"entity":"prodi"}
+    - Berapa [TOEFL]{"entity":"test"} [sistem informasi]{"entity":"prodi"}
+    - [TOEFL]{"entity":"test"} [si]{"entity":"prodi"}
+    - Berapa [TOEFL]{"entity":"test"} [sistem komputer]{"entity":"prodi"}
+    - Berapa [TOEFL]{"entity":"test"} [sk]{"entity":"prodi"}
+    - Berapa [TOEFL]{"entity":"test"} [pendidikan bahasa inggris]{"entity":"prodi"}
+    - [TOEFL]{"entity":"test"} [pend bahasa inggris]{"entity":"prodi"}
+    - [IELTS]{"entity":"test"} [pend bahasa inggris]{"entity":"prodi"}
 
-  - intent: tanya/tanya_standar_nilai_bahasa_inggris_fkip
+  - lookup: prodi
     examples: |
-      - kosong
+      - teknik informatika
+      - ti
+      - sistem informasi
+      - si
+      - sistem komputer
+      - sk
+      - pendidikan bahasa inggris
+      - pend bahasa inggris
+      - pend bhs inggris
+      - bhs inggris
+      - bahasa inggris
 
-  - intent: tanya/tanya_standar_nilai_bahasa_inggris_fisip
+  - synonym: pendidikan bahasa inggris
     examples: |
-      - kosong
+      - pend bahasa inggris
+      - pend bhs inggris
+      - bhs inggris
+      - bahasa inggris
 
-  - intent: tanya/tanya_standar_nilai_bahasa_inggris_mipa
+  - synonym: teknik informatika
     examples: |
-      - kosong
+      - ti
 
-  - intent: tanya/tanya_standar_nilai_bahasa_inggris_fasilkom
+  - synonym: sistem informasi
     examples: |
-      - kosong
+      - si
 
-  - intent: tanya/tanya_standar_nilai_bahasa_inggris_fkm
+  - synonym: sistem komputer
     examples: |
-      - kosong
+      - sk
 
-  - intent: tanya/tanya_standar_nilai_bahasa_inggris_pps
+  - intent: toefl400
     examples: |
-      - kosong
+      - Berapa skor [TOEFL]{"entity":"test"} jurusan [pendidikan bahasa indonesia]{"entity":"prodi400"}
+      - Berapa skor [IELTS]{"entity":"test"} jurusan [pgsd]{"entity":"prodi400"}
+      - Berapa [IELTS]{"entity":"test"} [pendidikan bahasa indonesia]{"entity":"prodi400"}
+      - Berapa [Test Unsri]{"entity":"test"} [pendidikan bahasa indonesia]{"entity":"prodi400"}
+      - [TOEFL]{"entity":"test"} [pendidikan bahasa indonesia]{"entity":"prodi400"}
+      - [TOEFL]{"entity":"test"} [pendidikan sejarah]{"entity":"prodi400"}
+      - [TOEFL]{"entity":"test"} [pendidikan ekonomi]{"entity":"prodi400"}
+      - [TOEFL]{"entity":"test"} [bimbingan konseling]{"entity":"prodi400"}
+      - [TOEFL]{"entity":"test"} [pendidikan teknik mesin]{"entity":"prodi400"}
+      - [Test Unsri]{"entity":"test"} [pendidikan matematika]{"entity":"prodi400"}
+      - [TOEFL]{"entity":"test"} [pendidikan fisika]{"entity":"prodi400"}
+      - [TOEFL]{"entity":"test"} [pendidikan kimia]{"entity":"prodi400"}
+      - [TOEFL]{"entity":"test"} [pendidikan biologi]{"entity":"prodi400"}
+      - [TOEFL]{"entity":"test"} [pgsd]{"entity":"prodi400"}
+      - [TOEFL]{"entity":"test"} [penjaskes]{"entity":"prodi400"}
+      - [TOEFL]{"entity":"test"} [pendidikan masyarakat]{"entity":"prodi400"}
+      - [TOEFL]{"entity":"test"} [ilmu administrasi publik]{"entity":"prodi400"}
+      - [TOEFL]{"entity":"test"} [hubungan internasional]{"entity":"prodi400"}
+      - Berapa skor [TOEFL]{"entity":"test"} prodi [hi]{"entity":"prodi400"}
+      - [TOEFL]{"entity":"test"} [ilmu komunikasi]{"entity":"prodi400"}
+      - [TOEFL]{"entity":"test"} [ilmu kelautan]{"entity":"prodi400"}
+      - [TOEFL]{"entity":"test"} [ilmu kesehatan masyarakat]{"entity":"prodi400"}
+      - [TOEFL]{"entity":"test"} [sosiologi]{"entity":"prodi400"}
+      - [TOEFL]{"entity":"test"} [ilmu gizi]{"entity":"prodi400"}
+      - [IELTS]{"entity":"test"} [kesehatan lingkungan]{"entity":"prodi400"}
+      - [TOEFL]{"entity":"test"} [farmasi]{"entity":"prodi400"}
+
+  - lookup: prodi400
+    examples: |
+      - ppkn
+      - pgsd
+      - penjaskes
+      - sosiologi
+      - matematika
+      - fisika
+      - kimia
+      - biologi
+      - farmasi
+      - pendidikan sejarah
+      - pendidikan ekonomi
+      - bimbingan konseling
+      - pendidikan bahasa indonesia
+      - pendidikan teknik mesin
+      - pendidikan matematika
+      - pendidikan fisika
+      - pendidikan kimia
+      - pendidikan biologi
+      - pendidikan masyarakat
+      - ilmu administrasi publik
+      - ilmu komunikasi
+      - ilmu kesehatan masyarakat
+      - ilmu gizi
+      - pend ekonomi
+      - administrasi publik
+      - pend biologi
+      - pend sejarah
+      - bahasa indonesia
+      - pend bahasa indonesia
+      - pend bhs indo
+      - pend bahasa
+      - pend bhs indonesia
+      - hubungan internasional
+      - hi
+      - bk
+      - kesehatan masyarakat
+      - pend mesin
+      - pend teknik mesin
+
+  - synonym: pendidikan bahasa indonesia
+    examples: |
+      - bahasa indonesia
+      - pend bahasa indonesia
+      - pend bhs indo
+      - pend bahasa
+      - pend bhs indonesia
+
+  - synonym: pendidikan sejarah
+    examples: |
+      - pend sejarah
+
+  - synonym: bimbingan konseling
+    examples: |
+      - bk
+
+  - synonym: pendidikan teknik mesin
+    examples: |
+      - pend mesin
+      - pend teknik mesin
+
+  - synonym: pendidikan fisika
+    examples: |
+      - pend fisika
+
+  - synonym: pendidikan kimia
+    examples: |
+      - pend kimia
+
+  - synonym: pendidikan biologi
+    examples: |
+      - pend biologi
+
+  - synonym: pendidikan ekonomi
+    examples: |
+      - pend ekonomi
+
+  - synonym: pendidikan masyarakat
+    examples: |
+      - pend masyarakat
+
+  - synonym: ilmu administrasi publik
+    examples: |
+      - administrasi publik
+
+  - synonym: hubungan internasional
+    examples: |
+      - hi
+
+  - synonym: ilmu komunikasi
+    examples: |
+      - ilkom
+
+  - synonym: ilmu kesehatan masyarakat
+    examples: |
+      - kesmas
+      - kesehatan masyarakat
+
+  - synonym: ilmu gizi
+    examples: |
+      - gizi
+
+  - intent: toefl425
+    examples: |
+      - Berapa skor [TOEFL]{"entity":"test"} jurusan [ilmu hukum]{"entity":"prodi425"}
+      - Berapa skor [TOEFL]{"entity":"test"} jurusan [magister ilmu hukum]{"entity":"prodi425"}
+      - Berapa skor [IELTS]{"entity":"test"} jurusan [magister ilmu hukum]{"entity":"prodi425"}
+      - Berapa [TOEFL]{"entity":"test"} [teknik pertambangan]{"entity":"prodi425"}
+      - Berapa [Test Unsri]{"entity":"test"} [teknik pertambangan]{"entity":"prodi425"}
+      - [TOEFL]{"entity":"test"} [teknik geologi]{"entity":"prodi425"}
+      - [Test Unsri]{"entity":"test"} [teknik geologi]{"entity":"prodi425"}
+
+  - lookup: prodi425
+    examples: |
+      - ilmu hukum
+      - teknik pertambangan
+      - teknik geologi
+      - pertambangan
+      - tambang
+      - geologi
+      - magister ilmu hukum
+      - magister hukum
+      - s2 hukum
+
+  - synonym: ilmu hukum
+    examples: |
+      - hukum
+
+  - synonym: magister ilmu hukum
+    examples: |
+      - magister hukum
+      - s2 hukum
+
+  - synonym: teknik pertambangan
+    examples: |
+      - pertambangan
+      - tambang
+
+  - synonym: teknik geologi
+    examples: |
+      - geologi
+
+  - intent: toefl450
+    examples: |
+      - Berapa skor [TOEFL]{"entity":"test"} jurusan [teknik sipil]{"entity":"prodi450"}
+      - Berapa skor [IELTS]{"entity":"test"} jurusan [teknik sipil]{"entity":"prodi450"}
+      - Berapa skor [Test Unsri]{"entity":"test"} jurusan [teknik sipil]{"entity":"prodi450"}
+      - Berapa [TOEFL]{"entity":"test"} [teknik kimia]{"entity":"prodi450"}
+      - Berapa [IELTS]{"entity":"test"} [teknik kimia]{"entity":"prodi450"}
+      - [TOEFL]{"entity":"test"} [teknik elektro]{"entity":"prodi450"}
+      - [TOEFL]{"entity":"test"} [teknik mesin]{"entity":"prodi450"}
+      - [TOEFL]{"entity":"test"} [arsitektur]{"entity":"prodi450"}
+      - [TOEFL]{"entity":"test"} [ilmu keperawatan]{"entity":"prodi450"}
+      - [TOEFL]{"entity":"test"} [pendidikan dokter gigi]{"entity":"prodi450"}
+      - [IELTS]{"entity":"test"} [psikologi]{"entity":"prodi450"}
+      - [Test Unsri]{"entity":"test"} [psikologi]{"entity":"prodi450"}
+      - [Test Unsri]{"entity":"test"} [mesin]{"entity":"prodi450"}
+      - [IELTS]{"entity":"test"} [keperawatan]{"entity":"prodi450"}
+
+  - lookup: prodi450
+    examples: |
+      - teknik sipil
+      - teknik kimia
+      - teknik elektro
+      - teknik mesin
+      - arsitektur
+      - ilmu keperawatan
+      - pendidikan dokter gigi
+      - psikologi
+      - sipil
+      - mesin
+      - elektro
+      - keperawatan
+      - dokter gigi
+      - pend dokter gigi
+
+  - synonym: teknik sipil
+    examples: |
+      - sipil
+
+  - synonym: teknik elektro
+    examples: |
+      - elektro
+
+  - synonym: teknik mesin
+    examples: |
+      - mesin
+
+  - synonym: ilmu keperawatan
+    examples: |
+      - keperawatan
+
+  - synonym: pendidikan dokter gigi
+    examples: |
+      - dokter gigi
+      - pend dokter gigi
+
+  - intent: toefldiploma
+    examples: |
+      - Berapa skor [TOEFL]{"entity":"test"} jurusan [komputerisasi akuntansi]{"entity":"prodidiploma"}
+      - Berapa skor [IELTS]{"entity":"test"} jurusan [komputerisasi akuntansi]{"entity":"prodidiploma"}
+      - Berapa [TOEFL]{"entity":"test"} [komputerisasi akuntansi]{"entity":"prodidiploma"}
+      - Berapa [Test Unsri]{"entity":"test"} [komputerisasi akuntansi]{"entity":"prodidiploma"}
+      - [TOEFL]{"entity":"test"} [komputerisasi akuntansi]{"entity":"prodidiploma"}
+      - [IELTS]{"entity":"test"} [komputerisasi akuntansi]{"entity":"prodidiploma"}
+      - [TOEFL]{"entity":"test"} [manajemen informatika]{"entity":"prodidiploma"}
+      - [Test Unsri]{"entity":"test"} [teknik komputer]{"entity":"prodidiploma"}
+      - [TOEFL]{"entity":"test"} [teknik komputer]{"entity":"prodidiploma"}
+
+  - lookup: prodidiploma
+    examples: |
+      - diploma tiga akuntansi
+      - akuntansi d3
+      - akuntansi diploma 3
+      - d3 akuntansi
+      - diploma 3 akuntansi
+      - kesekertariatan
+      - komputerisasi akuntansi
+      - manajemen informatika
+      - teknik komputer
+
+  - synonym: akuntansi diploma tiga
+    examples: |
+      - d3 akuntansi
+      - diploma 3 akuntansi
+      - akuntansi d3
+      - akuntansi diploma 3
+
+  - intent: toeflmagister450
+    examples: |
+      - Berapa skor [TOEFL]{"entity":"test"} jurusan [pendidikan olahraga]{"entity":"prodimagister450"}
+      - Berapa skor [IELTS]{"entity":"test"} jurusan [magister pendidikan bahasa]{"entity":"prodimagister450"}
+      - Berapa [TOEFL]{"entity":"test"} [ilmu manajemen]{"entity":"prodimagister450"}
+      - Berapa [Test Unsri]{"entity":"test"} [ilmu manajemen]{"entity":"prodimagister450"}
+      - [TOEFL]{"entity":"test"} [magister pendidikan bahasa]{"entity":"prodimagister450"}
+      - [TOEFL]{"entity":"test"} [magister pendidikan matematika]{"entity":"prodimagister450"}
+      - [TOEFL]{"entity":"test"} [magister pendidikan fisika]{"entity":"prodimagister450"}
+      - [TOEFL]{"entity":"test"} [teknologi pendidikan]{"entity":"prodimagister450"}
+      - [TOEFL]{"entity":"test"} [pendidikan olahraga]{"entity":"prodimagister450"}
+      - [TOEFL]{"entity":"test"} [magister administrasi publik]{"entity":"prodimagister450"}
+      - [TOEFL]{"entity":"test"} [magister sosiologi]{"entity":"prodimagister450"}
+      - [TOEFL]{"entity":"test"} [magister fisika]{"entity":"prodimagister450"}
+      - [TOEFL]{"entity":"test"} [magister kimia]{"entity":"prodimagister450"}
+      - [TOEFL]{"entity":"test"} [magister biologi]{"entity":"prodimagister450"}
+      - [TOEFL]{"entity":"test"} [magister ilmu kesehatan masyarakat]{"entity":"prodimagister450"}
+      - [TOEFL]{"entity":"test"} [pengelolaan lingkungan]{"entity":"prodimagister450"}
+      - [Test Unsri]{"entity":"test"} [kependudukan]{"entity":"prodimagister450"}
+
+  - intent: toeflmagister500
+    examples: |
+      - Berapa skor [TOEFL]{"entity":"test"} jurusan [magister ilmu komputer]{"entity":"prodimagister500"}
+      - Berapa skor [IELTS]{"entity":"test"} jurusan [magister ilmu komputer]{"entity":"prodimagister500"}
+      - Berapa [TOEFL]{"entity":"test"} [magister ilmu komputer]{"entity":"prodimagister500"}
+      - Berapa [Test Unsri]{"entity":"test"} [magister ilmu komputer]{"entity":"prodimagister500"}
+      - [IELTS]{"entity":"test"} [magister ilmu komputer]{"entity":"prodimagister500"}
+      - [Test Unsri]{"entity":"test"} [magister ilmu komputer]{"entity":"prodimagister500"}
+
+  - lookup: prodimagister500
+    examples: |
+      - magister ilmu komputer
+
+  - intent: toeflmagister525
+    examples: |
+      - Berapa skor [TOEFL]{"entity":"test"} jurusan [magister pendidikan bahasa inggris]{"entity":"prodimagister525"}
+      - Berapa skor [IELTS]{"entity":"test"} jurusan [magister pendidikan bahasa inggris]{"entity":"prodimagister525"}
+      - Berapa [TOEFL]{"entity":"test"} [magister pendidikan bahasa inggris]{"entity":"prodimagister525"}
+      - Berapa [Test Unsri]{"entity":"test"} [magister pendidikan bahasa inggris]{"entity":"prodimagister525"}
+      - [IELTS]{"entity":"test"} [magister pendidikan bahasa inggris]{"entity":"prodimagister525"}
+      - [Test Unsri]{"entity":"test"} [magister pendidikan bahasa inggris]{"entity":"prodimagister525"}
+
+  - lookup: prodimagister525
+    examples: |
+      - magister pendidikan bahasa inggris
+
+  - intent: toefldoktor450
+    examples: |
+      - Berapa skor [TOEFL]{"entity":"test"} jurusan [administrasi publik]{"entity":"prodidoktor450"}
+      - Berapa skor [IELTS]{"entity":"test"} jurusan [administrasi publik]{"entity":"prodidoktor450"}
+      - Berapa [TOEFL]{"entity":"test"} [administrasi publik]{"entity":"prodidoktor450"}
+      - Berapa [Test Unsri]{"entity":"test"} [MIPA]{"entity":"prodidoktor450"}
+      - [IELTS]{"entity":"test"} [administrasi publik]{"entity":"prodidoktor450"}
+      - [Test Unsri]{"entity":"test"} [MIPA]{"entity":"prodidoktor450"}
+      - [Test Unsri]{"entity":"test"} [ilmu lingkungan]{"entity":"prodidoktor450"}
+
+  - intent: toefldoktor475
+    examples: |
+      - Berapa skor [TOEFL]{"entity":"test"} jurusan [doktor pendidikan matematika]{"entity":"prodidoktor475"}
+      - Berapa skor [IELTS]{"entity":"test"} jurusan [doktor pendidikan matematika]{"entity":"prodidoktor475"}
+      - Berapa [TOEFL]{"entity":"test"} [doktor pendidikan matematika]{"entity":"prodidoktor475"}
+      - Berapa [Test Unsri]{"entity":"test"} [doktor pendidikan matematika]{"entity":"prodidoktor475"}
+      - [IELTS]{"entity":"test"} [doktor pendidikan matematika]{"entity":"prodidoktor475"}
+      - [Test Unsri]{"entity":"test"} [doktor pendidikan matematika]{"entity":"prodidoktor475"}
+
+  - intent: toefldoktor500
+    examples: |
+      - Berapa skor [TOEFL]{"entity":"test"} jurusan [doktor ilmu ekonomi]{"entity":"prodidoktor500"}
+      - Berapa skor [IELTS]{"entity":"test"} jurusan [doktor ilmu manajemen]{"entity":"prodidoktor500"}
+      - Berapa [TOEFL]{"entity":"test"} [doktor ilmu ekonomi]{"entity":"prodidoktor500"}
+      - Berapa [Test Unsri]{"entity":"test"} [doktor ilmu manajemen]{"entity":"prodidoktor500"}
+      - [IELTS]{"entity":"test"} [doktor ilmu ekonomi]{"entity":"prodidoktor500"}
+      - [Test Unsri]{"entity":"test"} [doktor ilmu manajemen]{"entity":"prodidoktor500"}
+
+  - lookup: test
+    examples: |
+      - TOEFL
+      - toefl
+      - IELTS
+      - ielts
+      - Ielts
+      - Test Unsri
+      - test unsri
+      - Test unsri
+
+  - synonym: TOEFL
+    examples: |
+      - toefl
+
+  - synonym: IELTS
+    examples: |
+      - ielts
+      - Ielts
+
+  - synonym: Test Unsri
+    examples: |
+      - test unsri
+      - Test unsri
 
   - intent: tanya/tanya_kriteria_putus_studi_program_diploma
     examples: |
