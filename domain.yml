@@ -9,6 +9,39 @@ intents:
   - mood_unhappy
   - bot_challenge
   - tanya
+  - toefl500:
+    use_entities: true
+  - toefl400:
+      use_entities: true
+  - toefl425:
+      use_entities: true
+  - toefl450:
+      use_entities: true
+  - toefldiploma:
+      use_entities: true
+  - toeflmagister450:
+      use_entities: true
+  - toefldoktor500:
+      use_entities: true
+  - toefldoktor475:
+      use_entities: true
+  - toefldoktor450:
+      use_entities: true
+  - toeflmagister525:
+      use_entities: true
+  - toeflmagister500:
+      use_entities: true
+    
+entities:
+- prodi
+- prodi400
+- prodi425
+- prodi450
+- prodidiploma
+- prodimagister450
+- test
+- prodimagister500
+- prodimagister525
 
 responses:
   utter_greet:
@@ -243,6 +276,19 @@ responses:
         dimuat dalam Buku Pedoman Akademik tersendiri; atau
         2. Tidak membayar UKT semester sampai batas waktu yang telah ditentukan dan tidak
         mengajukan SO.'
+
+actions:
+- action_toefl500
+- action_toefl400
+- action_toefl425
+- action_toefl450
+- action_toefldiploma
+- action_toeflmagister450
+- action_toeflmagister500
+- action_toeflmagister525
+- action_toefldoktor450
+- action_toefldoktor500
+- action_toefldoktor475
 
 session_config:
   session_expiration_time: 60
