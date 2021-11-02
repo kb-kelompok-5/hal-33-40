@@ -1,4 +1,4 @@
-version: '2.0'
+version: "2.0"
 
 intents:
   - greet
@@ -31,37 +31,37 @@ intents:
       use_entities: true
   - toeflmagister500:
       use_entities: true
-    
+
 entities:
-- prodi
-- prodi400
-- prodi425
-- prodi450
-- prodidiploma
-- prodimagister450
-- test
-- prodimagister500
-- prodimagister525
+  - prodi
+  - prodi400
+  - prodi425
+  - prodi450
+  - prodidiploma
+  - prodimagister450
+  - test
+  - prodimagister500
+  - prodimagister525
 
 responses:
   utter_greet:
-    - text: 'Hey! How are you?'
+    - text: "Hey! How are you?"
 
   utter_cheer_up:
-    - text: 'Here is something to cheer you up:'
-      image: 'https://i.imgur.com/nGF1K8f.jpg'
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-    - text: 'Did that help you?'
+    - text: "Did that help you?"
 
   utter_happy:
-    - text: 'Great, carry on!'
+    - text: "Great, carry on!"
 
   utter_goodbye:
-    - text: 'Bye'
+    - text: "Bye"
 
   utter_iamabot:
-    - text: 'I am a bot, powered by Rasa.'
+    - text: "I am a bot, powered by Rasa."
 
   utter_please_rephrase:
     - text: I'm sorry, I didn't quite understand that. Could you rephrase?
@@ -70,18 +70,18 @@ responses:
 
   utter_tanya/tanya_penilaian_pembelajaran:
     - text:
-        'Penilaian pembelajaran diatur berdasarkan Peraturan Rektor Universitas Sriwijaya Nomor 5
-        Tahun 2020 tentang Standar Pendidikan.'
+        "Penilaian pembelajaran diatur berdasarkan Peraturan Rektor Universitas Sriwijaya Nomor 5
+        Tahun 2020 tentang Standar Pendidikan."
 
   utter_tanya/tanya_cakupan_penilaian_pembelajaran:
     - text:
-        'Penilaian pembelajaran mencakup penilaian proses dan penilaian hasil belajar.
+        "Penilaian pembelajaran mencakup penilaian proses dan penilaian hasil belajar.
         Penilaian pembelajaran dilakukan untuk SELURUH kegiatan pembelajaran mata kuliah
-        terstruktur yang dimuat dalam kurikulum program studi.'
+        terstruktur yang dimuat dalam kurikulum program studi."
 
   utter_tanya/tanya_prinsip_penilaian:
     - text:
-        'a. Prinsip edukatif merupakan penilaian yang memotivasi mahasiswa agar mampu
+        "a. Prinsip edukatif merupakan penilaian yang memotivasi mahasiswa agar mampu
         memperbaiki perencanaan dan cara belajar dan meraih capaian pembelajaran
         lulusan.
         b. Prinsip otentik merupakan penilaian yang berorientasi pada proses belajar yang
@@ -94,11 +94,11 @@ responses:
         prosedur dan kriteria yang jelas, disepakati pada awal kuliah, dan dipahami oleh
         mahasiswa.
         e. Prinsip transparan merupakan penilaian yang prosedur dan hasil penilaiannya
-        dapat diakses oleh semua pemangku kepentingan.'
+        dapat diakses oleh semua pemangku kepentingan."
 
   utter_tanya/tanya_pemberian_umpan_balik:
     - text:
-        'Pemberian umpan balik kepada mahasiswa disampaikan kepada mahasiswa untuk
+        "Pemberian umpan balik kepada mahasiswa disampaikan kepada mahasiswa untuk
         setiap tahap penilaian pembelajaran selambat-lambatnya 2 (dua) minggu sejak
         penilaian dilakukan (kuis, ujian, pengumpulan tugas dan bentuk penilaian lain),
         melalui antara lain:
@@ -106,29 +106,29 @@ responses:
         mahasiswa yang bersangkutan setelah dinilai dan diberi umpan balik;
         b. pembahasan kunci jawaban atau rubrik instrumen penilaian; dan atau
         c. metode/cara lain yang dapat digunakan dosen untuk menyampaikan umpan
-        balik kepada mahasiswa.'
+        balik kepada mahasiswa."
 
   utter_tanya/tanya_instrumen_penilaian:
     - text:
-        'Instrumen penilaian dibedakan sesuai tujuan penilaian proses atau penilaian hasil
+        "Instrumen penilaian dibedakan sesuai tujuan penilaian proses atau penilaian hasil
         belajar. Instrumen penilaian ditetapkan oleh dosen pengampu mata kuliah.
         Instrumen penilaian dilengkapi rubrik penilaian yang berisi kriteria yang digunakan
         untuk menilai/menjustifikasi kualitas kinerja, kunci jawaban jika instrumen penilaian
-        berupa pertanyaan tertulis atau lisan.'
+        berupa pertanyaan tertulis atau lisan."
 
   utter_tanya/tanya_apa_saja_instrumen_penilaian:
-    - text: 'Instrumen penilaian dapat berbentuk antara lain:
+    - text: "Instrumen penilaian dapat berbentuk antara lain:
         a. pertanyaan tertulis atau lisan,
         b. daftar unjuk kerja (demonstration checklist),
         c. daftar tugas yang harus dilakukan/ditunjukkan mahasiswa untuk membuktikan
         pencapaian pembelajarannya
         d. penugasan proyek/studi kasus, portofolio, atau karya rancangan; dan
         e. kerangka bukti-bukti yang akan diambil/dilihat/dikumpulkan dari mahasiswa yang
-        dinilai.'
+        dinilai."
 
   utter_tanya/tanya_teknik_penilaian:
     - text:
-        'Teknik penilaian antara lain observasi (termasuk penilaian sikap), partisipasi, unjuk
+        "Teknik penilaian antara lain observasi (termasuk penilaian sikap), partisipasi, unjuk
         kerja, tes tertulis, tes lisan, dan angket. Teknik penilaian secara lengkap dapat
         dilihat pada Pedoman Kurikulum Universitas Sriwijaya tahun 2020. Hasil akhir
         penilaian merupakan integrasi antara berbagai teknik dan instumen peenilaian yang
@@ -136,11 +136,11 @@ responses:
         a. Penilaian sikap dapat menggunakan teknik penilaian observasi;
         b. Penilaian penguasaan pengetahuan, ketrampilan umum dan khusus dilakukan
         dengan memilih satu atau kombinasi dari berbagai teknik dan instrumen
-        penilaian.'
+        penilaian."
 
   utter_tanya/tanya_mekanisme_penilaian:
     - text:
-        'Mekanisme penilaian diawali dengan penyusunan tahap, teknik, instrumen,
+        "Mekanisme penilaian diawali dengan penyusunan tahap, teknik, instrumen,
         kriteria/indikator, dan bobot penilaian. Hal-hal ini disampaikan kepada mahasiswa
         pada awal perkuliahan.
         Prosedur penilaian terdiri dari: a) perencanaan, b) kegiatan pemberian tugas atau
@@ -157,21 +157,21 @@ responses:
         Setelah penilaian dilaksanakan, dosen memberikan umpan balik dan kesempatan
         kepada mahasiswa untuk mendiskusikan hasil penilaian dengan dosen penilai.
         Hasil penilaian belajar mahasiswa dicatat dan didokumentasikan secara tertib
-        sesuai ketentuan pendokumentasian hasil penilaian.'
+        sesuai ketentuan pendokumentasian hasil penilaian."
 
   utter_tanya/tanya_sistem_penilian:
     - text:
-        'Penilaian pembelajaran mencakup penilaian proses dan hasil belajar. Tidak
+        "Penilaian pembelajaran mencakup penilaian proses dan hasil belajar. Tidak
         diperkenankan menilai hanya pada akhir perkuliahan.
         Penilaian pembelajaran di Universitas Sriwijaya menggunakan angka dalam skala 0
         (nol) hingga 100 (seratus) dengan dua desimal di belakang koma jika diperlukan.
         Proporsi (pembobotan) nilai setiap komponen/tahap penilaian terhadap nilai
         akhir ditetapkan oleh dosen pengampu mata kuliah, berdasarkan distribusi
-        beban/materi serta cakupan kompetensi yang dinilai.'
+        beban/materi serta cakupan kompetensi yang dinilai."
 
   utter_tanya/tanya_pengulangan_mata_kuliah:
     - text:
-        'Ketentuan perbaikan nilai melalui pengulangan mata kuliah adalah sebagai berikut:
+        "Ketentuan perbaikan nilai melalui pengulangan mata kuliah adalah sebagai berikut:
         1. Mahasiswa yang ingin mengulang mata kuliah harus mengikuti kembali semua
         kegiatan pembelajaran mata kuliah bersangkutan, termasuk praktikum jika mata
         kuliah tersebut ada pembelajaran praktikum, atau dapat menggunakan nilai
@@ -180,11 +180,11 @@ responses:
         2. Mahasiswa mencantumkan mata kuliah yang diulang tersebut dalam
         KSM/KPSM semester yang ditempuh, dan atas persetujuan dosen PA.
         3. Nilai mata kuliah yang berlaku adalah nilai tertinggi yang pernah dicapai pada
-        mata kuliah tersebut.'
+        mata kuliah tersebut."
 
   utter_tanya/tanya_perbaikan_nilai:
     - text:
-        'Ketentuan perbaikan nilai mata kuliah atau remedial adalah sebagai berikut:
+        "Ketentuan perbaikan nilai mata kuliah atau remedial adalah sebagai berikut:
         1. Perbaikan nilai dilakukan sebelum semester berjalan berakhir.
         2. Jika perbaikan nilai ingin dilakukan pada akhir perkuliahan, mahasiswa harus
         memenuhi persyaratan tugas, mengikuti ujian/kuis, dan mengikuti kuliah dengan
@@ -202,14 +202,14 @@ responses:
         5. Apabila mahasiswa mengalami kendala/hambatan berkepanjangan untuk
         mengikuti kuliah, seperti karena sakit atau musibah lain, perbaikan penilaian
         melalui proses remedial bagi mahasiswa yang bersangkutan ditetapkan oleh
-        pengampu mata kuliah dan dilaporkan ke Koordinator Program Studi.'
+        pengampu mata kuliah dan dilaporkan ke Koordinator Program Studi."
 
   utter_tanya/tanya_transfer_nilai_dan_pengakuan_kredit_pindahan:
     - text: Mahasiswa Universitas Sriwijaya yang berasal dari mahasiswa pindahan dapat mengajukan transfer nilai mata kuliah yang telah diambilnya dari program studi/perguruan tinggi asal. Usulan transfer nilai diajukan kepada Rektor melalui Fakultas/Program serta dengan mengikuti ketentuan akademik pada masingmasing Fakultas/Program. Transfer nilai dan atau pengakuan kredit ditetapkan Rektor dengan mempertimbangkan keselarasan capaian pembelajaran mata kuliah (CPMK) dari program studi asal dengan CPMK di prodi tujuan. Pertimbangan keselarasan CPMK dari prodi asal dengan CPMK di prodi tujuan melibatkan koordinator program studi dan dekan fakultas/direktur program pascasarjana tujuan.
 
   utter_tanya/tanya_transfer_nilai_dan_pengakuan_kredit_unsri:
     - text:
-        'Pengakuan kredit mata kuliah yang diambil di luar Universitas Sriwijaya oleh
+        "Pengakuan kredit mata kuliah yang diambil di luar Universitas Sriwijaya oleh
         mahasiswa Universitas Sriwijaya yang melaksanakan program pertukaran
         mahasiswa, kemitraan, atau Merdeka Belajar dapat dilakukan apabila mahasiswa
         mengambil mata kuliah itu pada masa pembelajaran semester, secara melembaga
@@ -222,12 +222,12 @@ responses:
         seperti yang dinyatakan pada Tabel 3.4., nilai mata kuliah tersebut akan dikonversi
         ke aturan penilaian Universitas Sriwijaya oleh Dekan/Direktur sesuai
         kewenangannya, dan diusulkan ke Rektor. Penetapan nilai mata kuliah dimaksud
-        ditetapkan dalam Surat Keputusan Rektor.'
+        ditetapkan dalam Surat Keputusan Rektor."
   utter_tanya/tanya_ips_dan_ipk:
 
   utter_tanya/tanya_kriteria_putus_studi_program_diploma:
     - text:
-        'Mahasiswa Program Diploma dinyatakan putus studi (drop out) apabila memenuhi satu
+        "Mahasiswa Program Diploma dinyatakan putus studi (drop out) apabila memenuhi satu
         atau lebih kriteria berikut:
         1. Pada akhir tahun pertama mengumpulkan kredit kurang dari 27 sks;
         2. pada akhir tahun pertama mengumpulkan kredit sebanyak ≥ 27 sks tetapi IPK yang
@@ -237,11 +237,11 @@ responses:
         mempunyai IPK < 2,00 atau mempunyai nilai E atau memiliki nilai D > 10% dari 108 sks;
         atau
         5. tidak membayar UKT tiap semester sampai batas waktu yang telah ditentukan dan tidak
-        mengajukan SO.'
+        mengajukan SO."
 
   utter_tanya/tanya_kriteria_putus_studi_program_sarjana:
     - text:
-        'Mahasiswa Program Sarjana dinyatakan putus studi (drop out) apabila memenuhi satu atau
+        "Mahasiswa Program Sarjana dinyatakan putus studi (drop out) apabila memenuhi satu atau
         lebih kriteria berikut:
         1. Pada akhir tahun kedua mengumpulkan kredit kurang dari 52 sks dan atau IPK yang
         dicapai < 2,00;
@@ -250,11 +250,11 @@ responses:
         3. pada masa studi 10 semester telah mengumpulkan sks sesuai dengan yang disyaratkan
         akan tetapi mempunyai nilai E atau memiliki nilai D > 10% total dari 144 sks; atau
         4. tidak membayar UKT tiap semester sampai batas waktu yang telah ditentukan dan tidak
-        mengajukan SO.'
+        mengajukan SO."
 
   utter_tanya/tanya_kriteria_putus_studi_program_magister:
     - text:
-        'Mahasiswa Program Magister dinyatakan putus studi (drop out) apabila memenuhi satu
+        "Mahasiswa Program Magister dinyatakan putus studi (drop out) apabila memenuhi satu
         atau lebih kriteria berikut:
         1. Pada akhir semester dua mengumpulkan kredit kurang dari 18 sks dan/atau mempunyai
         IPK < 2,76; atau
@@ -264,34 +264,34 @@ responses:
         4. setelah menempuh enam semester tidak dapat menunjukkan kemampuan untuk
         menyelesaikan tugas akhir/tesis; atau
         5. tidak membayar UKT semester sampai batas waktu yang telah ditentukan dan tidak
-        mengajukan SO.'
+        mengajukan SO."
 
   utter_tanya/tanya_kriteria_putus_studi_program_doktor:
     - text:
-        'Mahasiswa Program Doktor dinyatakan putus studi (drop out) apabila memenuhi satu atau
+        "Mahasiswa Program Doktor dinyatakan putus studi (drop out) apabila memenuhi satu atau
         lebih kriteria berikut:
         1. Apabila tidak memenuhi kewajiban akademik yang dipersyaratkan untuk program Doktor
         yang ditetapkan dengan Surat Keputusan Rektor. Secara rinci persyaratan, prosedur dan
         ketentuan akademik lainnya tentang program Doktor di lingkungan Universitas Sriwijaya
         dimuat dalam Buku Pedoman Akademik tersendiri; atau
         2. Tidak membayar UKT semester sampai batas waktu yang telah ditentukan dan tidak
-        mengajukan SO.'
-
-actions:
-- action_toefl500
-- action_toefl400
-- action_toefl425
-- action_toefl450
-- action_toefldiploma
-- action_toeflmagister450
-- action_toeflmagister500
-- action_toeflmagister525
-- action_toefldoktor450
-- action_toefldoktor500
-- action_toefldoktor475
+        mengajukan SO."
 
   utter_tanya/tanya_lagi:
-  - text: "Ada lagi yang ingin ditanyakan?"
+    - text: "Ada lagi yang ingin ditanyakan?"
+
+actions:
+  - action_toefl500
+  - action_toefl400
+  - action_toefl425
+  - action_toefl450
+  - action_toefldiploma
+  - action_toeflmagister450
+  - action_toeflmagister500
+  - action_toeflmagister525
+  - action_toefldoktor450
+  - action_toefldoktor500
+  - action_toefldoktor475
 
 session_config:
   session_expiration_time: 60
