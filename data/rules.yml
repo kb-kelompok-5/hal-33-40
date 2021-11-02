@@ -15,8 +15,14 @@ rules:
     steps:
       - intent: nlu_fallback
       - action: utter_please_rephrase
-
+      
   - rule: Tanya rules
     steps:
       - intent: tanya
       - action: utter_tanya
+      - action: tanya_lagi
+      
+  - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+    steps:
+    - intent: nlu_fallback
+    - action: utter_please_rephrase
