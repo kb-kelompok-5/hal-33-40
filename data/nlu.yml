@@ -795,20 +795,20 @@ nlu:
       - berapa nilai minimal test kemampuan bahasa inggris unsri jurusan Ilmu Tanaman
       - berapa nilai minimal TOEFL jurusan Ilmu Tanaman
       - berapa nilai minimal IELTS jurusan Ilmu Tanaman
- 
+
   - intent: toefl500
-  examples: |
-    - Berapa skor [TOEFL]{"entity":"test"} jurusan [teknik informatika]{"entity":"prodi"}
-    - Berapa skor [IELTS]{"entity":"test"} jurusan [teknik informatika]{"entity":"prodi"}
-    - Berapa skor [TOEFL]{"entity":"test"} prodi [ti]{"entity":"prodi"}
-    - Berapa skor [Test Unsri]{"entity":"test"} prodi [ti]{"entity":"prodi"}
-    - Berapa [TOEFL]{"entity":"test"} [sistem informasi]{"entity":"prodi"}
-    - [TOEFL]{"entity":"test"} [si]{"entity":"prodi"}
-    - Berapa [TOEFL]{"entity":"test"} [sistem komputer]{"entity":"prodi"}
-    - Berapa [TOEFL]{"entity":"test"} [sk]{"entity":"prodi"}
-    - Berapa [TOEFL]{"entity":"test"} [pendidikan bahasa inggris]{"entity":"prodi"}
-    - [TOEFL]{"entity":"test"} [pend bahasa inggris]{"entity":"prodi"}
-    - [IELTS]{"entity":"test"} [pend bahasa inggris]{"entity":"prodi"}
+    examples: |
+      - Berapa skor [TOEFL]{"entity":"test"} jurusan [teknik informatika]{"entity":"prodi"}
+      - Berapa skor [IELTS]{"entity":"test"} jurusan [teknik informatika]{"entity":"prodi"}
+      - Berapa skor [TOEFL]{"entity":"test"} prodi [ti]{"entity":"prodi"}
+      - Berapa skor [Test Unsri]{"entity":"test"} prodi [ti]{"entity":"prodi"}
+      - Berapa [TOEFL]{"entity":"test"} [sistem informasi]{"entity":"prodi"}
+      - [TOEFL]{"entity":"test"} [si]{"entity":"prodi"}
+      - Berapa [TOEFL]{"entity":"test"} [sistem komputer]{"entity":"prodi"}
+      - Berapa [TOEFL]{"entity":"test"} [sk]{"entity":"prodi"}
+      - Berapa [TOEFL]{"entity":"test"} [pendidikan bahasa inggris]{"entity":"prodi"}
+      - [TOEFL]{"entity":"test"} [pend bahasa inggris]{"entity":"prodi"}
+      - [IELTS]{"entity":"test"} [pend bahasa inggris]{"entity":"prodi"}
 
   - lookup: prodi
     examples: |
