@@ -302,6 +302,9 @@ nlu:
       - [TOEFL]{"entity":"test"} [ilmu gizi]{"entity":"prodi400"}
       - [IELTS]{"entity":"test"} [kesehatan lingkungan]{"entity":"prodi400"}
       - [TOEFL]{"entity":"test"} [farmasi]{"entity":"prodi400"}
+      - [TOEFL]{"entity":"test"} [ilkom]{"entity":"prodi400"}
+      - [TOEFL]{"entity":"test"} [gizi]{"entity":"prodi400"}
+      - [Test Unsri]{"entity":"test"} [pend fisika]{"entity":"prodi400"}
 
   - lookup: prodi400
     examples: |
@@ -354,6 +357,11 @@ nlu:
       - kesehatan masyarakat
       - pend mesin
       - pend teknik mesin
+      - ilkom
+      - gizi
+      - pend masyarakat
+      - pend kimia
+      - pend fisika
 
   - synonym: pendidikan bahasa indonesia
     examples: |
@@ -632,16 +640,20 @@ nlu:
     examples: |
       - TOEFL
       - toefl
+      - toelf
       - IELTS
       - ielts
       - Ielts
       - Test Unsri
       - test unsri
       - Test unsri
+      - testunsri
+      - test Unsri
 
   - synonym: TOEFL
     examples: |
       - toefl
+      - toelf
 
   - synonym: IELTS
     examples: |
@@ -652,6 +664,8 @@ nlu:
     examples: |
       - test unsri
       - Test unsri
+      - testunsri
+      - test Unsri
 
   - intent: tanya/tanya_kriteria_putus_studi_program_diploma
     examples: |
