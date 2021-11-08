@@ -224,7 +224,8 @@ responses:
         kewenangannya, dan diusulkan ke Rektor. Penetapan nilai mata kuliah dimaksud
         ditetapkan dalam Surat Keputusan Rektor."
   utter_tanya/tanya_ips_dan_ipk:
-
+    - text: kosong
+    
   utter_tanya/tanya_kriteria_putus_studi_program_diploma:
     - text:
         "Mahasiswa Program Diploma dinyatakan putus studi (drop out) apabila memenuhi satu
@@ -276,9 +277,6 @@ responses:
         dimuat dalam Buku Pedoman Akademik tersendiri; atau
         2. Tidak membayar UKT semester sampai batas waktu yang telah ditentukan dan tidak
         mengajukan SO."
-
-  utter_tanya/tanya_lagi:
-    - text: "Ada lagi yang ingin ditanyakan?"
 
 actions:
   - action_toefl500
