@@ -236,6 +236,7 @@ nlu:
       - sistem komputer
       - sk
       - pendidikan dokter
+      - pendok
       - pendidikan bahasa inggris
       - pend bahasa inggris
       - pend bhs inggris
@@ -298,7 +299,6 @@ nlu:
       - [TOEFL]{"entity":"test"} [ilmu komunikasi]{"entity":"prodi400"}
       - [TOEFL]{"entity":"test"} [ilmu kelautan]{"entity":"prodi400"}
       - [TOEFL]{"entity":"test"} [ilmu kesehatan masyarakat]{"entity":"prodi400"}
-      - [TOEFL]{"entity":"test"} [ilmu gizi]{"entity":"prodi400"}
       - [TOEFL]{"entity":"test"} [ilmu gizi]{"entity":"prodi400"}
       - [IELTS]{"entity":"test"} [kesehatan lingkungan]{"entity":"prodi400"}
       - [TOEFL]{"entity":"test"} [farmasi]{"entity":"prodi400"}
