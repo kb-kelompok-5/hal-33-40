@@ -1,5 +1,9 @@
 version: "2.0"
-
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
 intents:
   - greet
   - goodbye
@@ -8,9 +12,10 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  - tanya
+  - nama:
+      use_entities: true
   - toefl500:
-    use_entities: true
+      use_entities: true
   - toefl400:
       use_entities: true
   - toefl425:
@@ -30,6 +35,8 @@ intents:
   - toeflmagister525:
       use_entities: true
   - toeflmagister500:
+      use_entities: true
+  - tanya:
       use_entities: true
 
 entities:
@@ -67,7 +74,8 @@ responses:
     - text: I'm sorry, I didn't quite understand that. Could you rephrase?
 
   # Start FAQ 33-40
-
+  utter_tanya:
+    - text: "testing this solution"
   utter_tanya/tanya_penilaian_pembelajaran:
     - text:
         "Penilaian pembelajaran diatur berdasarkan Peraturan Rektor Universitas Sriwijaya Nomor 5
@@ -223,9 +231,7 @@ responses:
         ke aturan penilaian Universitas Sriwijaya oleh Dekan/Direktur sesuai
         kewenangannya, dan diusulkan ke Rektor. Penetapan nilai mata kuliah dimaksud
         ditetapkan dalam Surat Keputusan Rektor."
-  utter_tanya/tanya_ips_dan_ipk:
-    - text: kosong
-    
+
   utter_tanya/tanya_kriteria_putus_studi_program_diploma:
     - text:
         "Mahasiswa Program Diploma dinyatakan putus studi (drop out) apabila memenuhi satu
@@ -277,7 +283,6 @@ responses:
         dimuat dalam Buku Pedoman Akademik tersendiri; atau
         2. Tidak membayar UKT semester sampai batas waktu yang telah ditentukan dan tidak
         mengajukan SO."
-
 actions:
   - action_toefl500
   - action_toefl400
@@ -290,7 +295,4 @@ actions:
   - action_toefldoktor450
   - action_toefldoktor500
   - action_toefldoktor475
-
-session_config:
-  session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+e2e_actions: []
