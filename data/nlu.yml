@@ -158,30 +158,44 @@ nlu:
 
   - intent: tanya/tanya_mekanisme_penilaian
     examples: |
+      - mekanisme penilaian?
       - bagaimana mekanisme penilaian?
+      - bagaimana mekanisme penilaian di universitas sriwijaya?
       - apa saja mekanisme dalam penilaian?
       - apa isi dari mekanisme dalam penilaian?
 
   - intent: tanya/tanya_sistem_penilian
     examples: |
-      - kosong
+      - sistem penilaian?
+      - sistem penilaian di universitas sriwijaya
+      - bagaimana sistem penilaian di universitas sriwijaya?
+      - bagaimana sistem penilaian?
 
   - intent: tanya/tanya_pengulangan_mata_kuliah
     examples: |
       - bagaimana saya dapat mengulang mata kuliah?
+      - bagaimana cara agar dapat mengulang mata kuliah?
+      - tata cara mengulang mata kuliah?
+      - cara mengulang mata kuliah?
 
   - intent: tanya/tanya_perbaikan_nilai
     examples: |
       - bagaimana saya dapat memperbaiki nilai?
+      - bagaimana cara agar dapat memperbaiki nilai?
+      - tata cara memperbaiki nilai?
+      - cara memperbaiki nilai?
 
   - intent: tanya/tanya_transfer_nilai_dan_pengakuan_kredit_pindahan
     examples: |
       - bagaimana cara mentransfer nilai jika saya murid pindahan?
       - bagaimana cara mendapatkan pengakuan kredit jika saya murid pindahan?
+      - cara mentransfer nilai jika saya murid pindahan?
+      - cara mendapatkan pengakuan kredit jika saya murid pindahan?
 
   - intent: tanya/tanya_transfer_nilai_dan_pengakuan_kredit_unsri
     examples: |
       - bagaimana cara mendapat pengakuan kredit dari mata kuliah yang diambil di luar universitas sriwijaya?
+      - cara mendapat pengakuan kredit dari mata kuliah yang diambil di luar universitas sriwijaya?
 
   # - intent: tanya/tanya_ips_dan_ipk
   #   examples: |
@@ -670,15 +684,23 @@ nlu:
   - intent: tanya/tanya_kriteria_putus_studi_program_diploma
     examples: |
       - apa saja kriteria yang menyatakan putus studi dalam program diploma?
+      - apa kriteria yang menyatakan putus studi dalam program diploma?
+      - kriteria yang menyatakan putus studi dalam program diploma?
 
   - intent: tanya/tanya_kriteria_putus_studi_program_sarjana
     examples: |
       - apa saja kriteria yang menyatakan putus studi dalam program sarjana?
+      - apa kriteria yang menyatakan putus studi dalam program sarjana?
+      - kriteria yang menyatakan putus studi dalam program sarjana?
 
   - intent: tanya/tanya_kriteria_putus_studi_program_magister
     examples: |
       - apa saja kriteria yang menyatakan putus studi dalam program magister?
+      - apa kriteria yang menyatakan putus studi dalam program magister?
+      - kriteria yang menyatakan putus studi dalam program magister?
 
   - intent: tanya/tanya_kriteria_putus_studi_program_doktor
     examples: |
       - apa saja kriteria yang menyatakan putus studi dalam program doktor?
+      - apa kriteria yang menyatakan putus studi dalam program doktor?
+      - kriteria yang menyatakan putus studi dalam program doktor?
