@@ -47,31 +47,32 @@ entities:
   - prodidiploma
   - prodimagister450
   - test
+  - prodidoktor500
   - prodimagister500
   - prodimagister525
 
 responses:
   utter_greet:
-    - text: "Hey! How are you?"
+    - text: "Halo ada yang bisa saya bantu"
 
   utter_cheer_up:
     - text: "Here is something to cheer you up:"
       image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-    - text: "Did that help you?"
+    - text: "Apakah itu membantu?"
 
   utter_happy:
     - text: "Great, carry on!"
 
   utter_goodbye:
-    - text: "Bye"
+    - text: "Terimakasih sudah menggunakan layanan kami"
 
   utter_iamabot:
     - text: "I am a bot, powered by Rasa."
 
   utter_please_rephrase:
-    - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+    - text: "Maaf saya kurang mengerti dengan apa yang anda maksud, bisa di ulangi lagi?"
 
   # Start FAQ 33-40
   utter_tanya:
