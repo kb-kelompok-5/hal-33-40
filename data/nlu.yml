@@ -6,49 +6,47 @@ nlu:
       - hey
       - hello
       - hi
-      - hello there
-      - good morning
-      - good evening
-      - moin
-      - hey there
-      - let's go
-      - hey dude
-      - goodmorning
-      - goodevening
-      - good afternoon
+      - halo 
+      - hai
+      - pagi
+      - selamat pagi
+      - selamat malam
+      - selamat siang
 
   - intent: goodbye
     examples: |
-      - good afternoon
-      - cu
-      - good by
-      - cee you later
-      - good night
-      - bye
-      - goodbye
-      - have a nice day
-      - see you around
+      - dadah
+      - sampai jumpa
       - bye bye
-      - see you later
+      - bye
+      - sampai besok
+      - ketemu lagi nanti
 
   - intent: affirm
     examples: |
       - yes
       - y
-      - indeed
-      - of course
-      - that sounds good
-      - correct
+      - iya
+      - ya
+      - tentu saja
+      - benar
+      - mantap
+      - setuju
 
   - intent: deny
     examples: |
-      - no
-      - n
-      - never
-      - I don't think so
-      - don't like that
-      - no way
-      - not really
+      - ga
+      - g
+      - gak
+      - tidak
+      - kayaknya masih kurang
+      - kayaknya gak gitu
+      - salah
+      - kurang
+      - ga setuju
+      - ga benar
+      - masih salah
+      - kurang benar
 
   - intent: mood_great
     examples: |
